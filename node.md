@@ -5,9 +5,10 @@
     P=> Print
     L=> Loop
 
-Eg: >3+5 # Read and evaluate
-    >8   #print
-    >    # Looping for next until not exited
+# Eg: 
+    >3+5     //Read and evaluate
+    >8      //print
+    >       //Looping for next until not exited
 
 ## Que2: Type of modules in node js
 ## Ans: There are three types of node module
