@@ -13,13 +13,13 @@
 ## Que2: Type of modules in node js
 ## Ans: There are three types of node module
 
-1. Core modules: It is a inbuilt module provide by node while installing
+1. ```Core modules:``` It is a inbuilt module provide by node while installing
 some of the inbuilt core module are: assert,fs,os,path,child_process,util
 
-2. Local modules: It is a module created by developer itself.
+2. ```Local modules:``` It is a module created by developer itself.
 eg: module.exports ={user}
 
-3. Third party modules: It is provided by third party
+3. ```Third party modules:``` It is provided by third party
 eg: mongoose,shortid,express,bcrypt,dotenv etc
 
 ## Que3: What is difference between setTimeout(),setImmediate() and process.nextTick()?
@@ -31,9 +31,9 @@ function multiply(a,b){
 };
 ```
 
-#Both setTimeout()and setImmediate() is part of event loop
+# Both setTimeout()and setImmediate() is part of event loop
 
-#Queue name:Timer queue
+# Queue name:Timer queue
 ```
 setTimeout(()=>{    
     console.log("setTimeout");
@@ -41,8 +41,8 @@ setTimeout(()=>{
 });
 ```
 
-#It is executed just after the current process has finished
-#Queue name:Check handler queue
+# It is executed just after the current process has finished
+# Queue name:Check handler queue
 ```
 setImmediate(()=>{   
     console.log("setImmediate");
@@ -50,8 +50,8 @@ setImmediate(()=>{
 });
 ```
 
-#Is is executed just after the current prcess and before event loop
-#Queue name: next tick queue
+# Is is executed just after the current prcess and before event loop
+# Queue name: next tick queue
 ```
 process.nextTick(()=>{    
     console.log("nextTick")
@@ -63,7 +63,7 @@ process.nextTick(()=>{
 console.log("Hello");
 ```
 
-#Output:
+# Output:
 ```
         Hello
         nextTick
