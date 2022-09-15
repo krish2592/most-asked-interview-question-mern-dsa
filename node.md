@@ -24,41 +24,52 @@ eg: mongoose,shortid,express,bcrypt,dotenv etc
 
 ## Que3: What is difference between setTimeout(),setImmediate() and process.nextTick()?
 ## Ans: 
-  
+
+```
 function multiply(a,b){     
    console.log(a*b);
 };
+```
 
-//Both setTimeout()and setImmediate() is part of event loop
+#Both setTimeout()and setImmediate() is part of event loop
 
-//Queue name:Timer queue
+#Queue name:Timer queue
+```
 setTimeout(()=>{    
     console.log("setTimeout");
     multiply(2,3);
 });
+```
 
-//It is executed just after the current process has finished
-//Queue name:Check handler queue
+#It is executed just after the current process has finished
+#Queue name:Check handler queue
+```
 setImmediate(()=>{   
     console.log("setImmediate");
     multiply(5,4);
 });
+```
 
-//Is is executed just after the current prcess and before event loop
-//Queue name: next tick queue
+#Is is executed just after the current prcess and before event loop
+#Queue name: next tick queue
+```
 process.nextTick(()=>{    
     console.log("nextTick")
     multiply(6,4)
 });
+```
 
-
+```
 console.log("Hello");
+```
 
-Output: Hello
+#Output:
+```
+        Hello
         nextTick
         24
         setTimeout
         6
         setImmediate
         20
-
+```
