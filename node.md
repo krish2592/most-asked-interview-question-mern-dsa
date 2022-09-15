@@ -13,14 +13,14 @@
 ## Que2: Type of modules in node js
 ## Ans: There are three types of node module
 
-1. ```Core modules:``` It is a inbuilt module provide by node while installing
-some of the inbuilt core module are: assert,fs,os,path,child_process,util
+1. ```Core modules:``` It is a inbuilt module provide by node while installing.
+    Some of the inbuilt core module are: ```assert, fs, os, path, child_process, util```.
 
 2. ```Local modules:``` It is a module created by developer itself.
-eg: module.exports ={user}
+    eg: ```module.exports ={user}```
 
 3. ```Third party modules:``` It is provided by third party
-eg: mongoose,shortid,express,bcrypt,dotenv etc
+    eg: ```mongoose, shortid, express, bcrypt, dotenv``` etc
 
 ## Que3: What is difference between setTimeout(),setImmediate() and process.nextTick()?
 ## Ans: 
